@@ -1,0 +1,145 @@
+/* Base styles (for desktop) */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #F4D04E;
+    font-family: 'Figtree', sans-serif;
+}
+
+.container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 24px;
+    width: 384px;
+    background: #FFFFFF;
+    border: 1px solid #111111;
+    box-shadow: 8px 8px 0px #000000;
+    border-radius: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+}
+
+.category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 12px;
+    background: #F4D04E;
+    border-radius: 4px;
+}
+
+.learning {
+    font-weight: 800;
+    font-size: 14px;
+    color: #111111;
+}
+
+.publish-date {
+    font-weight: 500;
+    font-size: 14px;
+    color: #111111;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 24px;
+    color: #111111;
+    margin: 0;
+}
+
+.title:hover {
+    color: #F4D04E;
+    cursor: pointer;
+}
+
+.description {
+    font-weight: 500;
+    font-size: 16px;
+    color: #6B6B6B;
+    margin: 0;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.userpic {
+    width: 32px;
+    height: 32px;
+    background: url('assets/images/image-avatar.webp') no-repeat center center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.authorname {
+    font-weight: 800;
+    font-size: 14px;
+    color: #111111;
+}
+
+/* Mobile styles (for screens less than 375px wide) */
+@media (max-width: 375px) {
+    body {
+        padding: 20px; /* Add padding for smaller screens */
+        height: auto; /* Allow body to grow with content */
+    }
+
+    .container {
+        width: 100%; /* Full width on mobile */
+        padding: 16px; /* Reduce padding for smaller screens */
+        gap: 16px; /* Reduce gap between elements */
+    }
+
+    .image-container img {
+        border-radius: 8px; /* Slightly smaller border radius for mobile */
+    }
+
+    .category {
+        padding: 4px 8px; /* Adjust padding for mobile */
+    }
+
+    .learning {
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+
+    .publish-date {
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+
+    .title {
+        font-size: 20px; /* Smaller font size for mobile */
+    }
+
+    .description {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    .userpic {
+        width: 28px; /* Smaller author image for mobile */
+        height: 28px;
+    }
+
+    .authorname {
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+}
